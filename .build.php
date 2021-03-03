@@ -74,11 +74,6 @@ return [
     },
 
     'create:after' => function ($demo, $instance) use ($modifyFile) {
-        // set RewriteBase
-        $modifyFile(
-            '.htaccess',
-            '# RewriteBase /mysite',
-            'RewriteBase /' . $instance->name()
-        );
+        // nothing to do
     }
 ];
