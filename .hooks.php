@@ -108,5 +108,7 @@ return [
         if (count($dirs) > 20) {
             return 'WARN:demokit:too-many-media-folders';
         }
+
+        return null;
     }
 ];
